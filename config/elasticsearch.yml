@@ -1,0 +1,29 @@
+cluster:
+  name: es
+
+index:
+  analysis:
+    analyzer:
+      ik:
+          alias: [ik_analyzer]
+          type: org.elasticsearch.index.analysis.IkAnalyzerProvider
+      ik_max_word:
+          type: ik
+          use_smart: false
+      ik_smart:
+          type: ik
+          use_smart: true
+
+path:
+  data: /data/data
+  logs: /data/log
+
+bootstrap:
+  memory_lock: true
+
+http:
+  enabled: true
+  compression: true
+    
+script:
+    disable_dynamic: false
