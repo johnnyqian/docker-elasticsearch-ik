@@ -14,10 +14,6 @@ index:
           type: ik
           use_smart: true
 
-path:
-  data: /mnt/es/data
-  logs: /mnt/es/log
-
 bootstrap:
   memory_lock: true
 
