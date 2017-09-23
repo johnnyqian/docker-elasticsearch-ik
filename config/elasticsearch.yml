@@ -15,8 +15,8 @@ index:
           use_smart: true
 
 path:
-  data: ~/es/data
-  logs: ~/es/log
+  data: /mnt/es/data
+  logs: /mnt/es/log
 
 bootstrap:
   memory_lock: true
